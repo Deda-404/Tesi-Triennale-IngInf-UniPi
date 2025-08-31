@@ -5,3 +5,5 @@ Materiale e Stesura tesi laure Triennale in Ingegneria Informatica presso l'univ
 - *Relatore:* Andrea Munafò
 
 *Voto:*
+
+NOTA: eseguire la prima volta, il file eseguibile (CoordCode.exe), come Amministratore.
