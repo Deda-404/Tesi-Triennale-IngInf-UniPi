@@ -1,0 +1,47 @@
+CoordCode — guida rapida
+================================
+
+Requisiti di runtime
+--------------------
+- Python 3.9+
+- tkinter (di norma già incluso con Python; su alcune distro Linux potrebbe servire installare "python3-tk")
+- matplotlib
+
+Installazione dipendenze
+------------------------
+Windows:
+    py -3 -m pip install matplotlib
+
+Linux/macOS:
+    python3 -m pip install matplotlib
+
+Esecuzione (sorgente)
+---------------------
+    python coordcode.py
+
+Funzionamento
+-------------
+1) All'avvio, inserisci:
+   - f (focale, in pixel) e premi Invio
+   - cx,cy (separati da virgola) e premi Invio
+
+2) Nella seconda schermata, inserisci i punti 3D come "X,Y,Z" e premi Invio.
+   Il punto viene proiettato e appare:
+   - nella tabella (colonne X,Y,Z,u,v)
+   - nel grafico (u,v) sul lato destro.
+
+3) Puoi esportare i dati in CSV o fare Reset.
+
+Creazione eseguibile (PyInstaller)
+----------------------------------
+Nota: per ottenere un eseguibile *nativo*, crea l'eseguibile su ciascun sistema operativo di destinazione.
+
+Windows:
+    py -3 -m pip install pyinstaller matplotlib
+    py -3 -m PyInstaller --noconsole --onefile coordcode.py
+
+Linux:
+    python3 -m pip install pyinstaller matplotlib
+    python3 -m PyInstaller --noconsole --onefile coordcode.py
+
+Gli eseguibili generati si troveranno nella cartella "dist/".
