@@ -1,0 +1,57 @@
+==================== COORDCODE — ESPORTAZIONE DATI ====================
+Descrizione: punti 3D, proiezioni (u,v) sul piano immagine e collegamenti definiti dall’utente.
+Nota: i punti sono elencati nell’ordine di inserimento; le coordinate u,v sono in pixel.
+
+[Camera]
+  f  = 1200        # focale in pixel
+  cx = 320        # coordinata u del punto principale
+  cy = 240        # coordinata v del punto principale
+
+[Punti]
+  # indice | X | Y | Z || u | v
+   1)  X=0          Y=100        Z=2160        ==>  u=320.0000   v=295.5556
+   2)  X=0          Y=-100       Z=2160        ==>  u=320.0000   v=184.4444
+   3)  X=0          Y=100        Z=1840        ==>  u=320.0000   v=305.2174
+   4)  X=0          Y=-100       Z=1840        ==>  u=320.0000   v=174.7826
+   5)  X=100        Y=160        Z=2000        ==>  u=380.0000   v=336.0000
+   6)  X=-100       Y=160        Z=2000        ==>  u=260.0000   v=336.0000
+   7)  X=100        Y=-160       Z=2000        ==>  u=380.0000   v=144.0000
+   8)  X=-100       Y=-160       Z=2000        ==>  u=260.0000   v=144.0000
+   9)  X=160        Y=0          Z=2100        ==>  u=411.4286   v=240.0000
+  10)  X=-160       Y=0          Z=2100        ==>  u=228.5714   v=240.0000
+  11)  X=160        Y=0          Z=1900        ==>  u=421.0526   v=240.0000
+  12)  X=-160       Y=0          Z=1900        ==>  u=218.9474   v=240.0000
+
+[SpigoliManuali]
+  # elenco di coppie (i, j) che collegano i punti con indici i e j
+  (1, 2)
+  (1, 5)
+  (1, 6)
+  (1, 9)
+  (1, 10)
+  (2, 7)
+  (2, 8)
+  (2, 9)
+  (2, 10)
+  (3, 4)
+  (3, 5)
+  (3, 6)
+  (3, 11)
+  (3, 12)
+  (4, 7)
+  (4, 8)
+  (4, 11)
+  (4, 12)
+  (5, 6)
+  (5, 9)
+  (5, 11)
+  (6, 10)
+  (6, 12)
+  (7, 8)
+  (7, 9)
+  (7, 11)
+  (8, 10)
+  (8, 12)
+  (9, 11)
+  (10, 12)
+=========================== FINE ESPORTAZIONE =========================
