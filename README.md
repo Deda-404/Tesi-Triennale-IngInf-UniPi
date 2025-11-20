@@ -4,6 +4,6 @@ Materiale e Stesura tesi laure Triennale in Ingegneria Informatica presso l'univ
 - *Titolo tesi:* La visione artificiale in robotica per l'interpretazione dello spazio
 - *Relatore:* Andrea Munafò
 
-*Voto:*
+*Voto:* 28
 
 NOTA: eseguire la prima volta, il file eseguibile (CoordCode.exe), come Amministratore.
